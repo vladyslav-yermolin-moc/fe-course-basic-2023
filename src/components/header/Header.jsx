@@ -1,5 +1,6 @@
 import logo from '../../assets/img/logo.png';
 import css from './Header.module.css';
+import {Link} from "react-router-dom";
 const Header = () => {
     return (
         <header className={css.header}>
@@ -11,7 +12,7 @@ const Header = () => {
                     <div className={css.header__menuSection}>
                         <ul className={css.menu__list}>
                             <li>
-                                <a href="/calculator" className={css.menu__listLink}>Calculator</a>
+                                <Link to="/calculator" className={css.menu__listLink}>Calculator</Link>
                             </li>
                             <li>
                                 <a href="/" className={css.menu__listLink}>Home</a>
