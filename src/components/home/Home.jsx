@@ -18,24 +18,24 @@ const Home = () => {
 
 
     return <ul style={{listStyle: "none", display: "flex", gap: 50, flexWrap: "wrap"}}>
-        {/*{games.map((game) => {*/}
-        {/*        return <li key={game.id}>*/}
-        {/*            <Card*/}
-        {/*                title={game.title}*/}
-        {/*                description={game.short_description.slice(0, 100)}*/}
-        {/*                image={game.thumbnail}*/}
-        {/*                platform={game.platform}*/}
-        {/*            />*/}
-        {/*        </li>*/}
-        {/*    })}*/}
-            <li>
-                <Card
-                    title="Call of Duty 2"
-                    description="Call of Duty 2 is a 2005 first-person shooter video game developed by Infinity Ward and published by Activision in most regions of the world."
-                    image="https://www.mmobomb.com/g/1136/thumbnail.jpg"
-                    platform="PC"
-                />
-            </li>
+        {games.map((game) => {
+                return <li key={game.id}>
+                    <Card
+                        title={game.title}
+                        description={game.short_description.slice(0, 100)}
+                        image={game.thumbnail}
+                        platform={game.platform}
+                    />
+                </li>
+            })}
+        {/*    <li>*/}
+        {/*        <Card*/}
+        {/*            title="Call of Duty 2"*/}
+        {/*            description="Call of Duty 2 is a 2005 first-person shooter video game developed by Infinity Ward and published by Activision in most regions of the world."*/}
+        {/*            image="https://www.mmobomb.com/g/1136/thumbnail.jpg"*/}
+        {/*            platform="PC"*/}
+        {/*        />*/}
+        {/*    </li>*/}
         </ul>
 }
 

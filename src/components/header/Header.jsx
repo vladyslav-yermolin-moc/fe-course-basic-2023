@@ -15,7 +15,7 @@ const Header = () => {
                                 <Link to="/calculator" className={css.menu__listLink}>Calculator</Link>
                             </li>
                             <li>
-                                <a href="/" className={css.menu__listLink}>Home</a>
+                                <Link to="/" className={css.menu__listLink}>Home</Link>
                             </li>
                         </ul>
                     </div>
